@@ -1,0 +1,102 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .background {
+  height: 400px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Courier New", "Courier", sans-serif;
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, right top, from(#43389f), to(#4ec6ca));
+  background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+}
+
+body .background .number {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .background .number .one {
+  height: 100px;
+  width: 24px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+body .background .number .one::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 24px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  background-color: #fff;
+  border-radius: 3px;
+  left: -18px;
+  top: 2px;
+}
+
+body .background .number .zero-first,
+body .background .number .zero-second {
+  position: absolute;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  border: 24px solid #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+body .background .number .zero-second {
+  left: 100px;
+  z-index: 2;
+}
+
+body .background h1 {
+  font-size: 82px;
+  font-weight: 900;
+  line-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+body .background h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
